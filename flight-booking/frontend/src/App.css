@@ -1,0 +1,227 @@
+/* ===== GENERAL APP STYLES ===== */
+.App {
+  text-align: center;
+}
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url('C:/Users/Lenovo/OneDrive/Desktop/protifolio/FlightBooking_Application/flight-booking/frontend/src/assests/w8nLkaM.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===== LOGIN & REGISTER FORM CONTAINER ===== */
+.login-container {
+  max-width: 400px;
+  width: 90%;
+  margin: 10% auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f5f5f5;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+  background-color: #fff;
+  border: 2px solid #1e90ff;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #1e90ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+  background-color: #0f78d1;
+  transform: translateY(-2px);
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+/* Left section (Links) */
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+  color: #1e90ff;
+}
+
+/* Right section (Login/Logout) */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right span {
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #1e90ff;
+}
+
+.nav-right button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-right button:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+  nav {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .nav-left a, .nav-right a {
+    margin: 0 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-left, .nav-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-left a, .nav-right a, .nav-right button {
+    margin: 0.4rem 0;
+  }
+
+  .login-container {
+    margin-top: 25%;
+    padding: 1.5rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-container input, .login-container button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 0.9rem;
+  }
+
+  .login-container {
+    width: 95%;
+    margin-top: 30%;
+    padding: 1.2rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .login-container button {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    /* 1. Switch to the compressed/optimized mobile image */
+    background-image: url('C:/Users/Lenovo/OneDrive/Desktop/protifolio/FlightBooking_Application/flight-booking/frontend/src/assests/w8nLkaM.jpg'); 
+    
+    /* 2. Change attachment to scroll for better mobile performance */
+    background-attachment: scroll; 
+    
+    /* Keep 'cover' to ensure it fills the screen, but it will crop the sides on tall, narrow screens */
+    background-size: cover; 
+    
+    /* Keep 'center' to focus on the plane */
+    background-position: center center; 
+  }
+}

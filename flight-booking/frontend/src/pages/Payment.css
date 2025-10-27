@@ -1,0 +1,155 @@
+.payment-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.payment-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  padding: 2rem;
+  color: #000;
+}
+
+.payment-title {
+  text-align: center;
+  color: #1e40af;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.flight-details h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.flight-details p {
+  color: #444;
+  margin: 4px 0;
+}
+
+.price {
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.seat-section {
+  margin-top: 1.5rem;
+}
+
+.seat-section label {
+  font-weight: 600;
+  color: #333;
+}
+
+.seat-section input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.total-section {
+  margin: 1.2rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+  background: #1e3a8a;
+  transform: scale(1.02);
+}
+
+.card-form {
+  margin-top: 1rem;
+}
+
+.card-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+.card-form input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: #22c55e;
+  color:black;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background: #15803d;
+  transform: scale(1.02);
+}
+
+.success-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color:black;
+}
+
+.success-card {
+  background: white;
+  color:black;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.redirect-text {
+  color: #4b5563;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.loading, .notfound {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,83 @@
+.dashboard-container {
+  text-align: center;
+  margin-top: 60px;
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 15px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.dashboard-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-actions button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.dashboard-actions button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ✅ Responsive design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 85%;
+    padding: 25px;
+  }
+
+  .dashboard-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .dashboard-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .dashboard-actions button {
+    width: 80%;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    width: 95%;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .dashboard-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .dashboard-actions button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
