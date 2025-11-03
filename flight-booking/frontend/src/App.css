@@ -213,7 +213,7 @@ nav {
 @media (max-width: 600px) {
   body {
     /* 1. Switch to the compressed/optimized mobile image */
-    background-image: url('C:/Users/Lenovo/OneDrive/Desktop/protifolio/FlightBooking_Application/flight-booking/frontend/src/assests/w8nLkaM.jpg'); 
+    background-image: url('frontend/src/assests/w8nLkaM.jpg'); 
     
     /* 2. Change attachment to scroll for better mobile performance */
     background-attachment: scroll; 
