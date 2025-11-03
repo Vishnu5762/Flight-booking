@@ -36,7 +36,7 @@ export const loginUser = async (userData) => {
 // ---------- ✈️ FLIGHT APIs ----------
 export const getFlights = async (query) => {
   try {
-    const response = await axios.get(`${API_URL}/flights`, {
+    const response = await axios.get(`${API_URL}/api/flights`, {
       ...getAuthConfig(),
       params: query,
     });
@@ -48,7 +48,7 @@ export const getFlights = async (query) => {
 
 export const createFlight = async (flightData) => {
   try {
-    const response = await axios.post(`${API_URL}/flights`, flightData, getAuthConfig());
+    const response = await axios.post(`${API_URL}/api/flights`, flightData, getAuthConfig());
     return response.data;
   } catch (error) {
     throw error.response?.data || { message: 'Flight creation failed' };
@@ -58,7 +58,7 @@ export const createFlight = async (flightData) => {
 // ---------- 🧾 BOOKING APIs ----------
 export const createBooking = async (bookingData) => {
   try {
-    const response = await axios.post(`${API_URL}/bookings`, bookingData, getAuthConfig());
+    const response = await axios.post(`${API_URL}/api/bookings`, bookingData, getAuthConfig());
     return response.data;
   } catch (error) {
     throw error.response?.data || { message: 'Booking failed' };
@@ -67,7 +67,7 @@ export const createBooking = async (bookingData) => {
 
 export const getUserBookings = async (userId) => {
   try {
-    const response = await axios.get(`${API_URL}/bookings/${userId}`, getAuthConfig());
+    const response = await axios.get(`${API_URL}/api/bookings/${userId}`, getAuthConfig());
     return response.data;
   } catch (error) {
     throw error.response?.data || { message: 'Unable to fetch user bookings' };
