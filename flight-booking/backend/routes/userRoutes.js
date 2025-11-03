@@ -4,8 +4,10 @@ import nodemailer from "nodemailer";
 import crypto from "crypto";
 import User from "../models/User.js";
 import { registerUser, loginUser } from "../controllers/userController.js";
+import dotenv from 'dotenv';
 
 const router = express.Router();
+dotenv.config();
 
 /* ======================================
    🟢 USER AUTH ROUTES (REGISTER / LOGIN)
