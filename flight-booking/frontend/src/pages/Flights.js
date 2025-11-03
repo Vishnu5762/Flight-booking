@@ -18,7 +18,7 @@ const Flights = () => {
         return;
       }
 
-      const res = await axios.get('http://localhost:5000/api/flights', {
+      const res = await axios.get(`${API_URL}/api/flights`, {
         headers: { Authorization: `Bearer ${token}` },
         params: { source: from, destination: to },
       });
