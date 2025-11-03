@@ -7,7 +7,7 @@ body, html, #root {
   height: 100%;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-image: url('C:/Users/Lenovo/OneDrive/Desktop/protifolio/FlightBooking_Application/flight-booking/frontend/src/assests/w8nLkaM.jpg');
+  background-image: url('frontend/src/assets/w8nLkaM.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
