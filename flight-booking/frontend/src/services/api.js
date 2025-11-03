@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for backend API
-const API_URL = 'https://flight-booking-backend1.onrender.com';
+const API_URL = 'https://flight-booking-backend-l6pf.onrender.com';
 
 // Get JWT token from localStorage and attach to headers
 const getAuthConfig = () => {
