@@ -12,7 +12,7 @@ const CheckoutForm = ({ amount }) => {
 
   useEffect(() => {
     // Get clientSecret from backend
-    axios.post('http://localhost:5000/api/payments/create-payment-intent', { amount }, {
+    axios.post('https://flight-booking-backend-l6pf.onrender.com', { amount }, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
