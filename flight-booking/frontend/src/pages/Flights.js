@@ -18,7 +18,7 @@ const Flights = () => {
         return;
       }
 
-      const res = await axios.get('https://flight-booking-backend-l6pf.onrender.com/api/flights', {
+      const res = await axios.get('https://flight-booking-backend-zm5y.onrender.com/api/flights', {
         headers: { Authorization: `Bearer ${token}` },
         params: { source: from, destination: to },
       });
