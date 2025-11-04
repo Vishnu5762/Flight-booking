@@ -20,7 +20,7 @@ const PaymentPage = () => {
   useEffect(() => {
     const fetchFlight = async () => {
       try {
-        const res = await fetch(`https://flight-booking-backend-l6pf.onrender.com/api/flights/${flightId}`);
+        const res = await fetch(`https://flight-booking-backend-zm5y.onrender.com/api/flights/${flightId}`);
         const data = await res.json();
         setFlight(data);
       } catch (error) {
