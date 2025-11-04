@@ -10,7 +10,7 @@ const ForgotPassword = () => {
   const navigate=useNavigate();
   const handleSendToken = async (e) => {
     e.preventDefault();
-    const res = await fetch("https://flight-booking-backend-l6pf.onrender.com/api/users/forgot-password", {
+    const res = await fetch("https://flight-booking-backend-zm5y.onrender.com/api/users/forgot-password", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
