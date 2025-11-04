@@ -10,13 +10,13 @@ const router = express.Router();
 dotenv.config();
 
 /* ======================================
-   🟢 USER AUTH ROUTES (REGISTER / LOGIN)
+    USER AUTH ROUTES (REGISTER / LOGIN)
 ====================================== */
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 
 /* ======================================
-   🔐 FORGOT PASSWORD
+   FORGOT PASSWORD
 ====================================== */
 router.post("/forgot-password", async (req, res) => {
   const { email } = req.body;
@@ -37,13 +37,14 @@ router.post("/forgot-password", async (req, res) => {
 
     // ⚙️ Setup email transport (use your Gmail App Password)
     const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "pakanati.vishnuvardhanreddie@gmail.com",
-         pass: process.env.GMAIL_APP_PASS,// ✅ your Gmail address
-                           // ✅ your App Password
-      },
-    });
+  host: 'smtp.gmail.com', 
+  port: 465, // Standard secure SMTP port
+  secure: true, // Use SSL/TLS (always use true for port 465)
+  auth: {
+    user: "pakanati.vishnuvardhanreddie@gmail.com", 
+    pass: process.env.GMAIL_APP_PASS, 
+  },
+});
 
     const mailOptions = {
       from: "pakanati.vishnuvardhanreddie@gmail.com",  // must match the auth user
@@ -63,7 +64,7 @@ router.post("/forgot-password", async (req, res) => {
 });
 
 /* ======================================
-   🟢 RESET PASSWORD
+   RESET PASSWORD
 ====================================== */
 router.post("/reset-password", async (req, res) => {
   const { email, token, newPassword } = req.body;
