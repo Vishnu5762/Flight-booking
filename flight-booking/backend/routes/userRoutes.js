@@ -38,12 +38,15 @@ router.post("/forgot-password", async (req, res) => {
     // ⚙️ Setup email transport (use your Gmail App Password)
     const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com', 
-  port: 465, // Standard secure SMTP port
-  secure: true, // Use SSL/TLS (always use true for port 465)
+  port: 457, // Standard secure SMTP port
+  secure: false, 
   auth: {
     user: "pakanati.vishnuvardhanreddie@gmail.com", 
     pass: process.env.GMAIL_APP_PASS, 
   },
+        tls: {
+        ciphers: 'SSLv3' 
+    },
 });
 
     const mailOptions = {
