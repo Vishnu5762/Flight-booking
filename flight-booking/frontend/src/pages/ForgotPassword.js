@@ -23,7 +23,7 @@ const ForgotPassword = () => {
   const handleResetPassword = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://flight-booking-backend-l6pf.onrender.com/api/users/reset-password", {
+      const res = await fetch("https://flight-booking-backend-zm5y.onrender.com/api/users/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, token, newPassword }),
