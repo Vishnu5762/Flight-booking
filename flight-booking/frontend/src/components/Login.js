@@ -69,6 +69,7 @@ const Login = () => {
           </Link>
         </p>
       </div>
+       <p>Note: At the first hit server takes time to wakeup and process request kindly wait for 30-50 seconds</p>
     </div>
   );
 };
