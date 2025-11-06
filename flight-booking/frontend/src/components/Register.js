@@ -50,6 +50,8 @@ const Register = () => {
         />
         <button type="submit">Register</button>
       </form>
+            
+      <p style={text-align:center}>Note: At the first hit server takes time to wakeup and process request kindly wait for 30-50 seconds</p>
     </div>
   );
 };
